@@ -660,11 +660,11 @@ th {
         display: none; } }
 
 .gradient-bg, .registration-area .course-form-section .btn, .course-details-left .course-list li .btn:hover, .right-contents .btn.enroll, .contact-page-area .form-area .btn, .top-category-widget-area .single-cat-widget:hover .overlay-bg, .post-content-area .single-post .primary-btn:hover, .blog-pagination .page-item.active .page-link, .blog-pagination .page-link:hover, .widget-wrap .newsletter-widget .bbtns, .comment-form .btn, .footer-area .single-footer-widget .click-btn, .footer-area .footer-bottom .footer-social a:hover {
-  background: -webkit-linear-gradient(90deg, #7c32ff 0%, #c738d8 100%);
-  background: -moz-linear-gradient(90deg, #7c32ff 0%, #c738d8 100%);
-  background: -o-linear-gradient(90deg, #7c32ff 0%, #c738d8 100%);
-  background: -ms-linear-gradient(90deg, #7c32ff 0%, #c738d8 100%);
-  background: linear-gradient(90deg, #7c32ff 0%, #c738d8 100%); }
+  background: -webkit-linear-gradient(90deg, #3a383d 0%, #000000 100%);
+  background: -moz-linear-gradient(90deg, #3a383d 0%, #000000 100%);
+  background: -o-linear-gradient(90deg, #3a383d 0%, #000000 100%);
+  background: -ms-linear-gradient(90deg, #3a383d 0%, #000000 100%);
+  background: linear-gradient(90deg, #3a383d 0%, #000000 100%); }
 
 .gradient-bg-reverse, #search-input-box {
   background: -webkit-linear-gradient(270deg, #7c32ff 0%, #c738d8 100%);
