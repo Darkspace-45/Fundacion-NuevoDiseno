@@ -1364,6 +1364,7 @@ th {
 }
 
 .popular-course-area .owl-controls {
+  color: #000;
   position: absolute;
   top: -95px;
   right: 27%;
@@ -1371,6 +1372,7 @@ th {
 
 @media (max-width: 991px) {
   .popular-course-area .owl-controls {
+    color: #000;
     display: none;
   }
 }
