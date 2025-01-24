@@ -977,6 +977,7 @@ th {
   font-size: 12px;
   font-weight: 500;
   color: #000;
+
   padding: 20px;
   transition: color 0.3s ease;
 }
@@ -1068,11 +1069,7 @@ th {
 }
 
 .home-banner-area {
-<<<<<<< HEAD
   background: url(../img/photo_4940852441298087215_y.jpg) no-repeat;
-=======
-  background: url(../img/mont.jpg) no-repeat;
->>>>>>> 758333a1e7e22b685f8185ecca97cd5999ace84d
   background-size: cover;
   background-position: center center;
   max-height: 1200px;
