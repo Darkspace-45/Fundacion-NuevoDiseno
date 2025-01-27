@@ -4278,7 +4278,7 @@ h6 {
 }
 
 .form-select .nice-select .list .option:hover {
-  color: #7c32ff;
+  color: #625f68;
   background: transparent;
 }
 
@@ -4310,7 +4310,7 @@ h6 {
   }
 }
 
-.footer-area .single-footer-widget h4 {
+.footer-area .single-footer-widget h4  {
   color: #fff;
   margin-bottom: 35px;
 }
@@ -4367,22 +4367,22 @@ h6 {
 
 .footer-area .single-footer-widget input.placeholder {
   padding-left: 10px;
-  color: #828bb2;
+  color: #fff;
 }
 
 .footer-area .single-footer-widget input:-moz-placeholder {
   padding-left: 10px;
-  color: #828bb2;
+  color: #fff;
 }
 
 .footer-area .single-footer-widget input::-moz-placeholder {
   padding-left: 10px;
-  color: #828bb2;
+  color: #fff;
 }
 
 .footer-area .single-footer-widget input::-webkit-input-placeholder {
   padding-left: 10px;
-  color: #828bb2;
+  color: #fff;
 }
 
 .footer-area .single-footer-widget .click-btn {
