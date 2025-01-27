@@ -594,7 +594,7 @@ th {
 }
 
 .text-white {
-  color: #fff;
+  color: white;
 }
 
 .transition {
@@ -1367,8 +1367,8 @@ th {
 .popular-course-area .owl-controls {
   color: #000;
   position: absolute;
-  top: -95px;
-  right: 27%;
+  top: -px;
+  right:0;
 }
 
 @media (max-width: 991px) {
@@ -1381,6 +1381,8 @@ th {
 .popular-course-area .owl-nav {
   display: -ms-flexbox;
   display: flex;
+  margin-top: 20px;
+
 }
 
 .popular-course-area .owl-nav .owl-prev {
@@ -4293,7 +4295,7 @@ h6 {
 
 .footer-area {
   padding-bottom:30px;
-  background-color: #666;
+  background-color: #333;
   border-radius: 20px;
 }
 
