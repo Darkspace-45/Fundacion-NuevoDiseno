@@ -11,14 +11,14 @@ window.addEventListener('scroll', () => {
     if (scrollPosition > 100) {
         // Fondo negro, letras blancas
         navbar.style.backgroundColor = 'black';
-        logo.style.filter = 'invert(1)';
         links.forEach(link => link.style.color = '#fff');
+        logo.style.filter = 'invert(1)';
         searchIcon.style.color = '#fff';
     } else {
-        // Fondo transparente, letras negras
-        navbar.style.backgroundColor = 'transparent';
-        logo.style.filter = 'invert(0)';
+        // Fondo blanco, letras negras
+        navbar.style.backgroundColor = 'white';
         links.forEach(link => link.style.color = '#000');
+        logo.style.filter = 'invert(0)';
         searchIcon.style.color = '#000';
     }
 });
