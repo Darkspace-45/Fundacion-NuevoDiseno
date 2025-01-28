@@ -18,11 +18,11 @@ window.addEventListener('scroll', () => {
         logo.style.filter = 'invert(1)';
         searchIcon.style.color = '#fff';
     } else if (isIndex) {
-        // Fondo transparente solo en el index
+        // Fondo transparente solo en el index con letras negras
         navbar.style.backgroundColor = 'transparent';
-        links.forEach(link => (link.style.color = '#fff'));
-        logo.style.filter = 'invert(1)';
-        searchIcon.style.color = '#fff';
+        links.forEach(link => (link.style.color = '#000'));
+        logo.style.filter = 'invert(0)';
+        searchIcon.style.color = '#000';
     } else {
         // Fondo blanco, letras negras en otras páginas
         navbar.style.backgroundColor = 'white';
