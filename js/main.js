@@ -260,3 +260,26 @@ $(function() {
 		$('#mc_embed_signup').find('form').ajaxChimp();
 	});
 });
+
+$(document).ready(function(){
+	$('.popular-course-carousel').owlCarousel({
+	  items: 3, // Muestra 3 elementos
+	  loop: true,
+	  margin: 10,
+	  nav: true,
+	  autoplay: true,
+	  autoplayTimeout: 3000,
+	  autoplayHoverPause: true,
+	  responsive: {
+		0: {
+		  items: 1 // Muestra 1 elemento en pantallas pequeñas
+		},
+		600: {
+		  items: 2 // Muestra 2 elementos en pantallas medianas
+		},
+		1000: {
+		  items: 3 // Muestra 3 elementos en pantallas grandes
+		}
+	  }
+	});
+  }); 
