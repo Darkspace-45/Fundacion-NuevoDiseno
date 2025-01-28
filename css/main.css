@@ -832,6 +832,7 @@ th {
   .section-title h2 {
     font-size: 30px;
     margin-bottom: 15px;
+    
   }
 }
 
@@ -1097,7 +1098,7 @@ th {
 
 .home-banner-left h1 {
   color: #222;
-  font-size: 48px;
+  font-size: 28px;
   line-height: 1em;
   margin-bottom: 20px;
 }
@@ -4495,8 +4496,9 @@ h6 {
 }
 
 .home-banner-left p {
-  font-size: 1.2em; /* Tamaño de la fuente del párrafo */
+  font-size: 1.5em; /* Tamaño de la fuente del párrafo */
   color: black; /* Asegura que el texto sea negro */
   text-align: center; /* Centra el texto */
 }
+
 
