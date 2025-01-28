@@ -4453,3 +4453,50 @@ h6 {
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
 }
+
+
+
+/* Animación de entrada desde la izquierda */
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animated {
+  animation-duration: 1s; /* Duración de la animación */
+  animation-fill-mode: both; /* Mantiene el estado final de la animación */
+}
+
+.fadeInLeft {
+  animation-name: slideInLeft; /* Nombre de la animación */
+}
+
+.popular-course-carousel {
+  display: flex;
+  justify-content: center; /* Centra el carrusel */
+}
+
+.single-popular-course {
+  margin: 0 10px; /* Espaciado entre los cursos */
+  flex: 0 0 auto; /* Evita que los elementos se expandan */
+}
+
+.text-black {
+  font-family: 'Arial', sans-serif; /* Cambia 'Arial' por la fuente que desees */
+  color: black; /* Asegura que el texto sea negro */
+  font-size: 1em; /* Tamaño de fuente más pequeño */
+  text-align: center; /* Centra el texto */
+}
+
+.home-banner-left p {
+  font-size: 1.2em; /* Tamaño de la fuente del párrafo */
+  color: black; /* Asegura que el texto sea negro */
+  text-align: center; /* Centra el texto */
+}
+
