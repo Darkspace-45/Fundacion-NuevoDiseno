@@ -1155,6 +1155,13 @@ th {
   background-size: cover;
   height: 640px;
 }
+.banner-area-shi {
+  background: url(../img/Andino.jpg) no-repeat center;
+  background-position: center right;
+  background-size: cover;
+  height: 840px;
+}
+
 
 .banner-right {
   margin-top: 200px;
@@ -1366,14 +1373,8 @@ th {
 }
 
 .popular-course-area .owl-controls {
-<<<<<<< HEAD
   position: relative;
   bottom: 0; 
-=======
-  color: #000;
-  position: absolute;
-  top: -px;
->>>>>>> 3b237b1d486cacd44588ea9701b06ea71a514726
   right: 0;
 }
 
