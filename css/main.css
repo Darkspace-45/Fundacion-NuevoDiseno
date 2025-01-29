@@ -1366,15 +1366,19 @@ th {
 }
 
 .popular-course-area .owl-controls {
+<<<<<<< HEAD
+  position: relative;
+  bottom: 0; 
+=======
   color: #000;
   position: absolute;
   top: -px;
+>>>>>>> 3b237b1d486cacd44588ea9701b06ea71a514726
   right: 0;
 }
 
 @media (max-width: 991px) {
   .popular-course-area .owl-controls {
-    color: #000;
     display: none;
   }
 }
@@ -1382,7 +1386,6 @@ th {
 .popular-course-area .owl-nav {
   display: -ms-flexbox;
   display: flex;
-  margin-top: 20px;
 
 }
 
@@ -1392,7 +1395,11 @@ th {
 
 .popular-course-area .owl-nav .owl-prev img,
 .popular-course-area .owl-nav .owl-next img {
-  opacity: .3;
+  -webkit-filter: brightness(1) invert(1);
+  -moz-filter: brightness(1) invert(1);
+  -ms-filter: brightness(1) invert(1);
+  -o-filter: brightness(1) invert(1);
+  filter: brightness(1) invert(1);
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
@@ -1401,7 +1408,11 @@ th {
 
 .popular-course-area .owl-nav .owl-prev img:hover,
 .popular-course-area .owl-nav .owl-next img:hover {
-  opacity: 1;
+  -webkit-filter: brightness(0) invert(1);
+  -moz-filter: brightness(0) invert(1);
+  -ms-filter: brightness(0) invert(1);
+  -o-filter: brightness(0) invert(1);
+  filter: brightness(0) invert(1);
 }
 
 .single-popular-course .details {
@@ -1485,7 +1496,7 @@ th {
 
 @media (max-width: 991px) {
   .video-area {
-    background: #828bb2;
+    background: #6179e2;
     padding: 60px 0px;
   }
 }
