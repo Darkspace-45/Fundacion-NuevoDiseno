@@ -1528,7 +1528,8 @@ th {
 
 .video-area .owl-controls {
   position: relative;
-  bottom: -100px;
+  bottom: -0px;
+  right: 0px;
 }
 
 @media (max-width: 991px) {
@@ -4541,6 +4542,20 @@ h6 {
   /* Asegura que el texto sea negro */
   text-align: center;
   /* Centra el texto */
+}
+.video-area .single-video {
+  text-align: center; /* Centra el texto */
+}
+
+.video-area .video-part img {
+  width: 100%; /* Ajusta el tamaño de la imagen (puedes cambiar el porcentaje según sea necesario) */
+  max-width: 400px; /* Establece un ancho máximo para la imagen */
+  height: auto; /* Mantiene la proporción de la imagen */
+  
+}
+
+.video-area p {
+  color: black; /* Cambia el color del texto a negro */
 }
 
 * {
