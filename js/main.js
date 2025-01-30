@@ -284,9 +284,10 @@ $(document).ready(function () {
 	});
 });
 
-function openPDF(pdfFile) {
-    // Base path to your PDFs
-    const basePath = '/assets/pdfs/';
+// Function to open PDF files
+function openServicePDF(pdfFile) {
+    // Base path to your PDFs folder
+    const basePath = '/assets/pdf/';
     
     // Open PDF in a new window/tab
     window.open(basePath + pdfFile, '_blank');
