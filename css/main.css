@@ -1155,6 +1155,7 @@ th {
   background-size: cover;
   height: 640px;
 }
+
 .banner-area-shi {
   background: url(../img/Andino.jpg) no-repeat center;
   background-position: center right;
@@ -1374,7 +1375,7 @@ th {
 
 .popular-course-area .owl-controls {
   position: relative;
-  bottom: 0; 
+  bottom: 0;
   right: 0;
 }
 
@@ -1697,6 +1698,7 @@ th {
   font-weight: 600;
   margin-bottom: 15px;
   transition: color 0.3s ease;
+  text-align: center;
 }
 
 .feature-card:hover .content h4 {
@@ -1720,6 +1722,111 @@ th {
   }
 }
 
+/* Mantener todos los estilos anteriores */
+.feature-card {
+  position: relative;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+/* Mantener todos los estilos originales de .feature-card y demás clases ... */
+
+/* Estilos para la última tarjeta con animación */
+.last-card {
+  display: none;
+  margin: 0 auto;
+  max-width: 400px;
+  opacity: 0;
+  transform: translateY(40px);
+  /* Cambiado a 40px hacia abajo */
+  transition: opacity 0.5s ease, transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.last-card.visible {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.last-card.hiding {
+  opacity: 0;
+  transform: translateY(40px);
+  /* Mantener el desplazamiento hacia abajo */
+}
+
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+    /* Comienza desde abajo */
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Estilos del botón */
+.show-more-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.show-more-btn {
+  background: #222120;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+}
+
+.show-more-btn:hover {
+  background: #505055;
+  transform: translateY(-2px);
+}
+
+.arrow {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+  transform: rotate(45deg);
+  transition: transform 0.3s;
+}
+
+.arrow.up {
+  transform: rotate(-135deg);
+}
+
+/* Nueva animación para el botón */
+@keyframes slideUp {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+.show-more-btn.animate {
+  animation: slideUp 0.3s forwards;
+}
 
 .testimonials-area {
   position: relative;
@@ -4733,49 +4840,51 @@ h6 {
 /* Animations */
 @keyframes fadeInUp {
   from {
-      transform: translateY(20px);
-      opacity: 0;
+    transform: translateY(20px);
+    opacity: 0;
   }
+
   to {
-      transform: translateY(0);
-      opacity: 1;
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 
 @keyframes widthGrow {
   from {
-      width: 0;
-      opacity: 0;
+    width: 0;
+    opacity: 0;
   }
+
   to {
-      width: 100px;
-      opacity: 1;
+    width: 100px;
+    opacity: 1;
   }
 }
 
 /* Responsive styles */
 @media (max-width: 768px) {
   .main-title {
-      font-size: 2.5rem;
+    font-size: 2.5rem;
   }
-  
+
   .title-part {
-      margin: 0 0.25rem;
+    margin: 0 0.25rem;
   }
 }
 
 @media (max-width: 576px) {
   .main-title {
-      font-size: 2rem;
+    font-size: 2rem;
   }
-  
+
   .header-content {
-      padding: 1.5rem 0.5rem;
+    padding: 1.5rem 0.5rem;
   }
 }
 
 /* Optional hover effects for each word */
 .title-part:hover {
   transform: translateY(-2px);
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
