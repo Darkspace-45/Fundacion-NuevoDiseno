@@ -284,3 +284,23 @@ $(document).ready(function () {
 	});
 });
 
+function openPDF(pdfFile) {
+    // Base path to your PDFs
+    const basePath = '/assets/pdfs/';
+    
+    // Open PDF in a new window/tab
+    window.open(basePath + pdfFile, '_blank');
+}
+
+// Optional: Add loading animation
+document.querySelectorAll('.service-card').forEach(card => {
+    card.addEventListener('click', function() {
+        // Add loading class
+        this.classList.add('loading');
+        
+        // Remove loading class after PDF opens
+        setTimeout(() => {
+            this.classList.remove('loading');
+        }, 1000);
+    });
+});
