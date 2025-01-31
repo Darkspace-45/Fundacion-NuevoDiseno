@@ -285,12 +285,8 @@ $(document).ready(function () {
 });
 
 // Function to open PDF files
-function openServicePDF(pdfFile) {
-    // Base path to your PDFs folder
-    const basePath = '/assets/pdf/';
-    
-    // Open PDF in a new window/tab
-    window.open(basePath + pdfFile, '_blank');
+function openServicePDF(url) {
+    window.open(url, '_blank');
 }
 
 // Optional: Add loading animation
