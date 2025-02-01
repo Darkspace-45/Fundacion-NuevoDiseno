@@ -284,12 +284,9 @@ $(document).ready(function () {
 	});
 });
 
-function openPDF(pdfFile) {
-    // Base path to your PDFs
-    const basePath = '/assets/pdfs/';
-    
-    // Open PDF in a new window/tab
-    window.open(basePath + pdfFile, '_blank');
+// Function to open PDF files
+function openServicePDF(url) {
+    window.open(url, '_blank');
 }
 
 // Optional: Add loading animation
