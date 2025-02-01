@@ -48,15 +48,21 @@
 
         <div class="collapse navbar-collapse justify-content-end align-items-center" id="navbarSupportedContent">
           <ul class="navbar-nav">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="about.html">Nosotros</a></li>
-            <li><a href="courses.html">Programas</a></li>
-            <li><a href="course-details.html">Shigra Digital</a></li>
-            <li><a href="courses.html">Medios & Comunicados</a></li>
-            <li><a href="contacts.html">Contacto</a></li>
+            <li><a href="index.html" data-es='Inicio' data-en='Home'>Inicio</a></li>
+            <li><a href="about.html" data-es='Nosotros' data-en='About'>Nosotros</a></li>
+            <li><a href="courses.html" data-es='Programas' data-en='Programs'>Programas</a></li>
+            <li><a href="course-details.html" data-es='Shigra Digital' data-en='Digital Shigra'>Shigra Digital</a></li>
+            <li><a href="courses.html" data-es='Medios & Comunicados' data-en='Media & Communications'>Medios & Comunicados</a></li>
+            <li><a href="contacts.html" data-es='Contacto' data-en='Contact'>Contacto</a></li>
           </ul>
+        </div>
+        <button onclick="toggleDarkMode()" class="theme-toggle bg-transparent " >
+          <span id="themeIcon">☀️</span>
+        </button>
+        &nbsp;
+        &nbsp;
+        <img id="flag-image" src="img/spain-flag.png" alt="English" style="cursor: pointer; width: 50px;">
       </div>
-    </div>
   </header>
   <!-- ================ End Header Area ================= -->
 
@@ -65,10 +71,13 @@
     <div class="container">
       <div class="row justify-content-center fullscreen align-items-center">
         <div class="col-lg-5 col-md-8 home-banner-left">
-          <h1 class="text-black animated fadeInLeft">
+          <h1 data-es='"Huaria": Quechua (n.) Viento fuerte.' data-en='"Huaria": Quechua (n.) Strong Windy.'
+            class="text-black animated fadeInLeft">
             "Huaria": Quechua (n.) Viento fuerte.
           </h1>
-          <p class="mx-auto text-black mt-20 mb-40 animated fadeInLeft">
+          <p data-es='Huaria es el poder de los Andes. Interconexión.'
+            data-en='Huaria is the power of the Andes. Interconnection.'
+            class="mx-auto text-black mt-20 mb-40 animated fadeInLeft">
             Huaria es el poder de los Andes. Interconexión.
           </p>
         </div>
@@ -77,138 +86,151 @@
   </section>
   <!-- ================ End banner Area ================= -->
 
-<!-- ================ Start Popular Course Area ================= -->
+  <!-- ================ Start Popular Course Area ================= -->
 
-<!-- ================ Start Feature Area ================= -->
-<section class="other-feature-area">
-  <div class="container">
-    <div class="feature-inner row">
-      <div class="col-lg-12">
-        <div class="section-title text-left">
-          <h2>
-            Programas
-          </h2>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6">
-        <div class="feature-card">
-          
-          <img src="img/Corporate-governance-A-pathway-to-sustainability-strategy.jpg.avif" alt="Gobernanza"
-            class="feature-img">
-     
-          <div class="overlay"></div>
-          <a href="courses.html">
-          <div class="icon-wrapper">
-            <img src="img/gobierno-digital.png" alt="Icono">
-          </div>
-        </a>
-          <div class="content">
-            <h4>GOBERNANZA</h4>
-            <p>
-              Abogamos por una Internet bajo los principios R.O.A.M. 
-            </p>
+  <!-- ================ Start Feature Area ================= -->
+  <section class="other-feature-area">
+    <div class="container">
+      <div class="feature-inner row">
+        <div class="col-lg-12">
+          <div class="section-title text-left">
+            <h2 data-es='Programas' data-en='Programs'>
+              Programas
+            </h2>
           </div>
         </div>
-      </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="feature-card">
 
-      <div class="col-lg-4 col-md-6">
-        <div class="feature-card">
-          <img src="img/pexels-shkrabaanthony-5475752.jpg" alt="Seguridad Digital" class="feature-img">
-          <div class="overlay"></div>
-          <a href="courses.html">
-          <div class="icon-wrapper">
-            <img src="img/proteccion.png" alt="Icono">
-          </div>
-        </a>
-          <div class="content">
-            <h4>SEGURIDAD DIGITAL</h4>
-            <p>
-              Ofrecemos un espacio para diagnóstico de riesgos de seguridad informática en equipos e
-              instalación de aplicaciones seguras. 
-            </p>
+            <img src="img/Corporate-governance-A-pathway-to-sustainability-strategy.jpg.avif" alt="Gobernanza"
+              class="feature-img">
+
+            <div class="overlay"></div>
+            <a href="courses.html">
+              <div class="icon-wrapper">
+                <img src="img/gobierno-digital.png" alt="Icono">
+              </div>
+            </a>
+            <div class="content">
+              <h4 data-es='GOBERNANZA' data-en='GOVERNANCE'>GOBERNANZA</h4>
+              <p data-es='Abogamos por una Internet bajo los principios R.O.A.M.' data-en='We advocate for a free, open and secure internet based on the R.O.A.M. principles.'>
+                Abogamos por una Internet bajo los principios R.O.A.M.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="col-lg-4 col-md-6">
-        <div class="feature-card">
-          <img src="img/pexels-nicolas-rueda-175965148-26966416.jpg" alt="CSIRT" class="feature-img">
-          <div class="overlay"></div>
-          <a href="courses.html">
-          <div class="icon-wrapper">
-            <img src="img/tres-personas.png" alt="Icono">
+        <div class="col-lg-4 col-md-6">
+          <div class="feature-card">
+            <img src="img/pexels-shkrabaanthony-5475752.jpg" alt="Seguridad Digital" class="feature-img">
+            <div class="overlay"></div>
+            <a href="courses.html">
+              <div class="icon-wrapper">
+                <img src="img/proteccion.png" alt="Icono">
+              </div>
+            </a>
+            <div class="content">
+              <h4 data-es='SEGURIDAD DIGITAL' data-en='DIGITAL SECURITY'>SEGURIDAD DIGITAL</h4>
+              <p data-es='Ofrecemos un espacio para diagnóstico de riesgos de seguridad informática en equipos e instalación de aplicaciones seguras.' data-en='We offer a space for diagnostic of computer security risks in equipment and installation of secure applications.'>
+                Ofrecemos un espacio para diagnóstico de riesgos de seguridad informática en equipos e
+                instalación de aplicaciones seguras.
+              </p>
+            </div>
           </div>
-        </a>
-          <div class="content">
-            <h4>CSIRT</h4>
-            <p>
-              Internet debe permanecer libre, abierto y seguro para el ejercicio de los derechos políticos,
-              económicos y culturales.
-            </p>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="feature-card">
+            <img src="img/pexels-nicolas-rueda-175965148-26966416.jpg" alt="CSIRT" class="feature-img">
+            <div class="overlay"></div>
+            <a href="courses.html">
+              <div class="icon-wrapper">
+                <img src="img/tres-personas.png" alt="Icono">
+              </div>
+            </a>
+            <div class="content">
+              <h4 data-es='CSIRT' data-en='CSIRT'>CSIRT</h4>
+              <p data-es='Internet debe permanecer libre, abierto y seguro para el ejercicio de los derechos políticos,
+              económicos y culturales.' data-en='Internet must remain free, open and secure for the exercise of political, economic and cultural rights.'>
+                Internet debe permanecer libre, abierto y seguro para el ejercicio de los derechos políticos,
+                económicos y culturales.
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ================ End Popular Course Area ================= -->
+  <!-- ================ End Popular Course Area ================= -->
 
- <!-- ================ Start Video Area ================= -->
-<section class="video-area section-gap-bottom">
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-lg-5">
-        <div class="section-title text-white">
-          <h2 class="text-white">
-            Nuestro Equipo 
-          </h2>
-          <p class="text-white mb-20">
-            Somos un equipo comprometido con la seguridad digital y el uso de 
-            Software Libre, promoviendo el acceso y la protección de la información 
-            tanto para los cibernautas como para las comunidades andinas del Ecuador. 
-            Nuestra misión es fortalecer la autonomía tecnológica y la seguridad en el 
-            entorno digital, fomentando el conocimiento y la colaboración en cada rincón del país.
-          </p>
+  <!-- ================ Start Video Area ================= -->
+  <section class="video-area section-gap-bottom">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-5">
+          <div class="section-title text-white">
+            <h2 class="text-white" data-es='Nuestro Equipo' data-en='Our Team'>
+              Nuestro Equipo
+            </h2>
+            <p class="text-white mb-20" data-es='Somos un equipo comprometido con la seguridad digital y el uso de
+            Software Libre, promoviendo el acceso y la protección de la información
+            tanto para los cibernautas como para las comunidades andinas del Ecuador.
+            Nuestra misión es fortalecer la autonomía tecnológica y la seguridad en el
+            entorno digital, fomentando el conocimiento y la colaboración en cada rincón del país.' 
+            data-en='We are a team committed to digital security and the use of
+            Free Software, promoting access and protection of information
+            both for netizens and for the Andean communities of Ecuador.
+            Our mission is to strengthen technological autonomy and security in the
+            digital environment, promoting knowledge and collaboration in every corner of the country.'>
+              Somos un equipo comprometido con la seguridad digital y el uso de
+              Software Libre, promoviendo el acceso y la protección de la información
+              tanto para los cibernautas como para las comunidades andinas del Ecuador.
+              Nuestra misión es fortalecer la autonomía tecnológica y la seguridad en el
+              entorno digital, fomentando el conocimiento y la colaboración en cada rincón del país.
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="offset-lg-1 col-md-6 video-left">
-        <div class="owl-carousel video-carousel">
-          <div class="single-video">
-            <div class="video-part">
-              <img class="img-fluid" src="img/petrux-web1-683x1024.jpg" alt="" style="width: 400px; height: 500px; object-fit: cover;">
+        <div class="offset-lg-1 col-md-6 video-left">
+          <div class="owl-carousel video-carousel">
+            <div class="single-video">
+              <div class="video-part">
+                <img class="img-fluid" src="img/petrux-web1-683x1024.jpg" alt=""
+                  style="width: 400px; height: 500px; object-fit: cover;">
+              </div>
+              <h4 class="text-white mb-20 mt-30" data-es='Pedro Franco' data-en='Pedro Franco'>Pedro Franco</h4>
+              <p class="text-white mb-20" data-es='Presidente Ejecutivo Ciberseguridad - Software Libre - Gobierno Abierto' data-en='Executive President Cybersecurity - Free Software - Open Government'>
+                Presidente Ejecutivo <br /> Ciberseguridad - Software Libre - Gobierno Abierto
+              </p>
             </div>
-            <h4 class="text-white mb-20 mt-30">Pedro Franco</h4>
-            <p class="text-white mb-20">
-              Presidente Ejecutivo <br/> Ciberseguridad - Software Libre - Gobierno Abierto
-            </p>
-          </div>
 
-          <div class="single-video">
-            <div class="video-part">
-              <img class="img-fluid" src="img/gebb-web1-683x1024.jpg" alt="" style="width: 400px; height: 500px; object-fit: cover;">
+            <div class="single-video">
+              <div class="video-part">
+                <img class="img-fluid" src="img/gebb-web1-683x1024.jpg" alt=""
+                  style="width: 400px; height: 500px; object-fit: cover;">
+              </div>
+              <h4 class="text-white mb-20 mt-30" data-es='Gina Brito' data-en='Gina Brito'>Gina Brito</h4>
+              <p class="text-white mb-20" data-es='Directora Ejecutiva Gobernanza de Internet - Seguridad Digital - Datos Abiertos' data-en='Executive Director Governance of Internet - Digital Security - Open Data'>
+                Directora Ejecutiva <br /> Gobernanza de Internet - Seguridad Digital - Datos Abiertos
+              </p>
             </div>
-            <h4 class="text-white mb-20 mt-30">Gina Brito</h4>
-            <p class="text-white mb-20">
-              Directora Ejecutiva <br/> Gobernanza de Internet - Seguridad Digital - Datos Abiertos
-            </p>
-          </div>
-          <div class="single-video">
-            <div class="video-part">
-              <img class="img-fluid" src="img/EfrenGuerrero-842x1024.jpg" alt="" style="width: 400px; height: 500px; object-fit: cover;">
+            <div class="single-video">
+              <div class="video-part">
+                <img class="img-fluid" src="img/EfrenGuerrero-842x1024.jpg" alt=""
+                  style="width: 400px; height: 500px; object-fit: cover;">
+              </div>
+              <h4 class="text-white mb-20 mt-30" data-es='Efrén Guerrero' data-en='Efrén Guerrero'>Efrén Guerrero</h4>
+              <p class="text-white mb-20" data-es='Secretario Ejecutivo Políticas Públicas – Derecho Informático' data-en='Executive Secretary Politics Publics - Information Law'>
+                Secretario Ejecutivo <br /> Políticas Públicas – Derecho Informático
+              </p>
             </div>
-            <h4 class="text-white mb-20 mt-30">Efrén Guerrero</h4>
-            <p class="text-white mb-20">
-              Secretario Ejecutivo <br/> Políticas Públicas – Derecho Informático
-            </p>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ================ End Video Area ================= -->
+  <!-- ================ End Video Area ================= -->
 
   <!-- ================ Start Blog Post Area ================= -->
   <section class="blog-post-area section-gap">
@@ -216,7 +238,7 @@
       <div class="feature-inner row">
         <div class="col-lg-12">
           <div class="section-title text-left">
-            <h2>
+            <h2 data-es='Testimonios' data-en='Testimonials'>
               Testimonios
             </h2>
           </div>
@@ -268,26 +290,27 @@
           width="420" height="420" style="border:0; object-fit: contain; border-radius: 8px; margin-right: 5px;"
           allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         <div class="col-lg-2 col-md-6 single-footer-widget">
-          <h4>Links Directos</h4>
+          <h4 data-es='Links Directos' data-en='Direct Links'>Links Directos</h4>
           <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Nosotros</a></li>
-            <li><a href="#">Programas</a></li>
-            <li><a href="#">Shigra Digital</a></li>
-            <li><a href="#">Medios & Comunicados</a></li>
-            <li><a href="#">Contacto</a></li>
+            <li><a href="#" data-es='Inicio' data-en='Home'>Inicio</a></li>
+            <li><a href="#" data-es='Nosotros' data-en='About'>Nosotros</a></li>
+            <li><a href="#" data-es='Programas' data-en='Programs'>Programas</a></li>
+            <li><a href="#" data-es='Shigra Digital' data-en='Digital Shigra'>Shigra Digital</a></li>
+            <li><a href="#" data-es='Medios & Comunicados' data-en='Media & Communications'>Medios & Comunicados</a></li>
+            <li><a href="#" data-es='Contacto' data-en='Contact'>Contacto</a></li>
           </ul>
         </div>
         <div class="col-lg-4 col-md-8 single-footer-widget">
-          <h4>Notificaciones</h4>
-          <p style="color: #fff">Enviaremos un mensaje a tu correo cada vez que subamos un nuevo programa.</p>
+          <h4 data-es='Notificaciones' data-en='Notifications'>Notificaciones</h4>
+          <p style="color: #fff" data-es='Enviaremos un mensaje a tu correo cada vez que subamos un nuevo programa.' data-en='We will send you an email every time we add a new program.'>
+            Enviaremos un mensaje a tu correo cada vez que subamos un nuevo programa.</p>
           <div class="form-wrap" id="mc_embed_signup">
             <form target="_blank"
               action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
               method="get" class="form-inline">
               <input class="form-control" name="EMAIL" placeholder="Correo Electrónico" onfocus="this.placeholder = ''"
                 onblur="this.placeholder = 'Correo Electrónico '" required="" type="email">
-              <button class="click-btn btn btn-default text-uppercase">Enviar</button>
+              <button class="click-btn btn btn-default text-uppercase" data-es='Enviar' data-en='Send'>Enviar</button>
               <div style="position: absolute; left: -5000px;">
                 <input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">
               </div>
@@ -334,6 +357,8 @@
   <script src="js/jquery.nice-select.min.js"></script>
   <script src="js/main.js"></script>
   <script src="js/navcolor.js"></script>
+  <script src="js/modoDark.js"></script>
+  <script src="js/cambiarIdioma.js"></script>
 </body>
 
 </html>
