@@ -51,31 +51,24 @@
 				<div class="collapse navbar-collapse justify-content-end align-items-center"
 					id="navbarSupportedContent">
 					<ul class="navbar-nav">
-						<li><a href="index.html">Inicio</a></li>
-						<li><a href="about.html">Nosotros</a></li>
-						<li><a href="courses.html">Programas</a></li>
-						<li><a href="courses.html">Shigra Digital</a></li>
-						<li><a href="blog-home.html">Medios & Comunicados</a></li>
-						<li><a href="contacts.html">Contacto</a></li>
-
-						<li>
-							<button class="search">
-								<span class="lnr lnr-magnifier" id="search"></span>
-							</button>
+						<li><a href="index.html" data-es='Inicio' data-en='Home'>Inicio</a></li>
+						<li><a href="about.html" data-es='Nosotros' data-en='About'>Nosotros</a></li>
+						<li><a href="courses.html" data-es='Programas' data-en='Programs'>Programas</a></li>
+						<li><a href="courses.html" data-es='Shigra Digital' data-en='Digital Shigra'>Shigra Digital</a>
 						</li>
+						<li><a href="blog-home.html" data-es='Medios & Comunicados'
+								data-en='Media & Communications'>Medios & Comunicados</a></li>
+						<li><a href="contacts.html" data-es='Contacto' data-en='Contact'>Contacto</a></li>
 					</ul>
 				</div>
+				<button onclick="toggleDarkMode()" class="theme-toggle bg-transparent ">
+					<span id="themeIcon">☀️</span>
+				</button>
+				&nbsp;
+				&nbsp;
+				<img id="flag-image" src="img/bandera_Ecuador.png" alt="English" style="cursor: pointer; width: 50px;">
 			</div>
 		</nav>
-		<div class="search-input" id="search-input-box">
-			<div class="container">
-				<form class="d-flex justify-content-between">
-					<input type="text" class="form-control" id="search-input" placeholder="Search Here" />
-					<button type="submit" class="btn"></button>
-					<span class="lnr lnr-cross" id="close-search" title="Close Search"></span>
-				</form>
-			</div>
-		</div>
 	</header>
 	<!-- ================ End Header Area ================= -->
 
@@ -84,7 +77,7 @@
 		<div class="container">
 			<div class="row justify-content-center align-items-center">
 				<div class="col-lg-12 banner-right">
-					<h1 class="text-white">
+					<h1 class="text-white" data-es='Contacto' data-en='Contact'>
 						Contacto
 					</h1>
 					<p class="mx-auto text-white  mt-20 mb-40">
@@ -93,9 +86,9 @@
 					</p>
 					<div class="link-nav">
 						<span class="box">
-							<a href="index.html">Inicio</a>
+							<a href="index.html" data-es='Inicio' data-en='Home'>Inicio</a>
 							<i class="lnr lnr-arrow-right"></i>
-							<a href="contacts.html">Contacto</a>
+							<a href="contacts.html" data-es='Contacto' data-en='Contact'>Contacto</a>
 						</span>
 					</div>
 				</div>
@@ -164,7 +157,8 @@
 							</div>
 							<div class="col-lg-12">
 								<div class="alert-msg" style="text-align: left;"></div>
-								<button class="btn" style="float: right;">Send Message</button>
+								<button class="btn" style="float: right;" data-es='Enviar'
+									data-en='Send'>Enviar</button>
 							</div>
 						</div>
 					</form>
@@ -179,52 +173,30 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-2 col-md-6 single-footer-widget">
-					<h4>Top Products</h4>
+					<h4 data-es='Links Directos' data-en='Direct Links'>Links Directos</h4>
 					<ul>
-						<li><a href="#">Managed Website</a></li>
-						<li><a href="#">Manage Reputation</a></li>
-						<li><a href="#">Power Tools</a></li>
-						<li><a href="#">Marketing Service</a></li>
-					</ul>
-				</div>
-				<div class="col-lg-2 col-md-6 single-footer-widget">
-					<h4>Quick Links</h4>
-					<ul>
-						<li><a href="#">Jobs</a></li>
-						<li><a href="#">Brand Assets</a></li>
-						<li><a href="#">Investor Relations</a></li>
-						<li><a href="#">Terms of Service</a></li>
-					</ul>
-				</div>
-				<div class="col-lg-2 col-md-6 single-footer-widget">
-					<h4>Features</h4>
-					<ul>
-						<li><a href="#">Jobs</a></li>
-						<li><a href="#">Brand Assets</a></li>
-						<li><a href="#">Investor Relations</a></li>
-						<li><a href="#">Terms of Service</a></li>
-					</ul>
-				</div>
-				<div class="col-lg-2 col-md-6 single-footer-widget">
-					<h4>Resources</h4>
-					<ul>
-						<li><a href="#">Guides</a></li>
-						<li><a href="#">Research</a></li>
-						<li><a href="#">Experts</a></li>
-						<li><a href="#">Agencies</a></li>
+						<li><a href="#" data-es='Inicio' data-en='Home'>Inicio</a></li>
+						<li><a href="#" data-es='Nosotros' data-en='About'>Nosotros</a></li>
+						<li><a href="#" data-es='Programas' data-en='Programs'>Programas</a></li>
+						<li><a href="#" data-es='Shigra Digital' data-en='Digital Shigra'>Shigra Digital</a></li>
+						<li><a href="#" data-es='Medios & Comunicados' data-en='Media & Communications'>Medios &
+								Comunicados</a></li>
+						<li><a href="#" data-es='Contacto' data-en='Contact'>Contacto</a></li>
 					</ul>
 				</div>
 				<div class="col-lg-4 col-md-6 single-footer-widget">
-					<h4>Newsletter</h4>
-					<p>You can trust us. we only send promo offers,</p>
+					<h4 data-es='Notificaciones' data-en='Notifications'>Notificaciones</h4>
+					<p data-es='Enviaremos un mensaje a tu correo cada vez que subamos un nuevo programa.'
+						data-en='We will send you an email every time we add a new program.'>Enviaremos un mensaje a tu
+						correo cada vez que subamos un nuevo programa.</p>
 					<div class="form-wrap" id="mc_embed_signup">
 						<form target="_blank"
 							action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
 							method="get" class="form-inline">
-							<input class="form-control" name="EMAIL" placeholder="Your Email Address"
+							<input class="form-control" name="EMAIL" placeholder="Correo Electrónico"
 								onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Email Address '"
 								required="" type="email">
-							<button class="click-btn btn btn-default text-uppercase">subscribe</button>
+							<button class="click-btn btn btn-default text-uppercase" data-es='Enviar' data-en='Send'>Enviar</button>
 							<div style="position: absolute; left: -5000px;">
 								<input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">
 							</div>
@@ -272,6 +244,8 @@
 	<script src="js/jquery.nice-select.min.js"></script>
 	<script src="js/main.js"></script>
 	<script src="js/navcolor.js"></script>
+	<script src="js/cambiarIdioma.js"></script>
+	<script src="js/modoDark.js"></script>
 </body>
 
 </html>
