@@ -8,7 +8,7 @@ function updateLanguage() {
     });
 
     // Actualizar imagen de la bandera
-    flagImage.src = currentLanguage === "es" ? "img/bandera_eu.png" : "img/bandera_Ecuador.png";
+    flagImage.src = currentLanguage === "es" ? "img/bandera_Ecuador.png" : "img/bandera_eu.png";
     flagImage.alt = currentLanguage === "es" ? "English" : "Español";
 }
 
