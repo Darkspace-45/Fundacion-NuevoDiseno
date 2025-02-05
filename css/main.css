@@ -828,6 +828,12 @@ th {
   margin-bottom: 20px;
 }
 
+.section-title h2.dark-mode {
+  font-size: 42px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
 @media (max-width: 768px) {
   .section-title h2 {
     font-size: 30px;
@@ -1084,7 +1090,8 @@ th {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.2); /* Fondo negro con 50% de transparencia */
+  background: rgba(0, 0, 0, 0.2);
+  /* Fondo negro con 50% de transparencia */
 }
 
 .home-banner-area * {
@@ -1254,6 +1261,11 @@ th {
   color: #222;
 }
 
+.about-right h1.dark-mode {
+  margin-bottom: 30px;
+  color: #ffffff;
+}
+
 @media (max-width: 991px) {
   .about-right h1 {
     font-size: 35px;
@@ -1408,20 +1420,16 @@ th {
 }
 
 .popular-course-area .owl-nav .owl-prev {
-  padding-right: 20px;
+  padding-right: 200px;
 }
 
 .popular-course-area .owl-nav .owl-prev img,
 .popular-course-area .owl-nav .owl-next img {
-  -webkit-filter: brightness(1) invert(1);
-  -moz-filter: brightness(1) invert(1);
-  -ms-filter: brightness(1) invert(1);
-  -o-filter: brightness(1) invert(1);
-  filter: brightness(1) invert(1);
-  -webkit-transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
+  -webkit-filter: brightness(0) invert(1);
+  -moz-filter: brightness(0) invert(1);
+  -ms-filter: brightness(0) invert(1);
+  -o-filter: brightness(0) invert(1);
+  filter: brightness(0) invert(1);
 }
 
 .popular-course-area .owl-nav .owl-prev img:hover,
@@ -1578,15 +1586,11 @@ th {
 
 .video-area .owl-controls .owl-prev,
 .video-area .owl-controls .owl-next {
-  -webkit-filter: brightness(1) invert(1);
-  -moz-filter: brightness(1) invert(1);
-  -ms-filter: brightness(1) invert(1);
-  -o-filter: brightness(1) invert(1);
-  filter: brightness(1) invert(1);
-  -webkit-transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
+  -webkit-filter: brightness(0) invert(1);
+  -moz-filter: brightness(0) invert(1);
+  -ms-filter: brightness(0) invert(1);
+  -o-filter: brightness(0) invert(1);
+  filter: brightness(0) invert(1);
 }
 
 .video-area .owl-controls .owl-prev:hover,
@@ -1872,11 +1876,11 @@ th {
 }
 
 .testimonials-area .owl-controls .owl-next {
-  -webkit-filter: brightness(0) invert(1);
-  -moz-filter: brightness(0) invert(1);
-  -ms-filter: brightness(0) invert(1);
-  -o-filter: brightness(0) invert(1);
-  filter: brightness(0) invert(1);
+  -webkit-filter: brightness(1) invert(1);
+  -moz-filter: brightness(1) invert(1);
+  -ms-filter: brightness(1) invert(1);
+  -o-filter: brightness(1) invert(1);
+  filter: brightness(1) invert(1);
 }
 
 .testimonials-area .owl-controls .owl-prev {
@@ -4904,4 +4908,9 @@ h6 {
 .title-part:hover {
   transform: translateY(-2px);
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.invert-color {
+  filter: invert(1);
+  mix-blend-mode: difference;
 }

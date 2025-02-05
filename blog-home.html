@@ -51,28 +51,18 @@
 						<li><a href="index.html">Inicio</a></li>
 						<li><a href="about.html">Nosotros</a></li>
 						<li><a href="courses.html">Programas</a></li>
-						<li><a href="courses.html">Shigra Digital</a></li>
+						<li><a href="course-details.html">Shigra Digital</a></li>
 						<li><a href="blog-home.html">Medios & Comunicados</a></li>
 						<li><a href="contacts.html">Contacto</a></li>
 
-						<li>
-							<button class="search">
-								<span class="lnr lnr-magnifier" id="search"></span>
-							</button>
-						</li>
-					</ul>
+						<button onclick="toggleDarkMode()" class="theme-toggle bg-transparent ">
+							<span id="themeIcon">☀️</span>
+						</button>
+						&nbsp;
+						&nbsp;
+						<img id="flag-image" src="img/programas/ecuador.jpg" alt="English"
+							style="cursor: pointer; width: 50px;">
 				</div>
-			</div>
-		</nav>
-		<div class="search-input" id="search-input-box">
-			<div class="container">
-				<form class="d-flex justify-content-between">
-					<input type="text" class="form-control" id="search-input" placeholder="Search Here" />
-					<button type="submit" class="btn"></button>
-					<span class="lnr lnr-cross" id="close-search" title="Close Search"></span>
-				</form>
-			</div>
-		</div>
 	</header>
 	<!-- ================ End Header Area ================= -->
 
@@ -81,7 +71,7 @@
 		<div class="container">
 			<div class="row justify-content-center align-items-center">
 				<div class="col-lg-12 banner-right">
-					<h1 class="text-white">
+					<h1 class="text-white" data-es='Blog' data-en='Blog'>
 						Blog Home
 					</h1>
 					<p class="mx-auto text-white  mt-20 mb-40">
@@ -90,9 +80,9 @@
 					</p>
 					<div class="link-nav">
 						<span class="box">
-							<a href="index.html">Home </a>
+							<a href="index.html" data-es='Inicio' data-en='Home'>Inicio </a>
 							<i class="lnr lnr-arrow-right"></i>
-							<a href="blog-home.html">Blog Home</a>
+							<a href="blog-home.html" data-es='Blog' data-en='Blog'>Blog</a>
 						</span>
 					</div>
 				</div>
@@ -100,69 +90,6 @@
 		</div>
 	</section>
 	<!-- ================ End banner Area ================= -->
-
-	<!-- Start top-category-widget Area -->
-	<section class="top-category-widget-area pt-90 pb-90 ">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-4">
-					<div class="single-cat-widget">
-						<div class="content relative">
-							<div class="overlay overlay-bg"></div>
-							<a href="#" target="_blank">
-								<div class="thumb">
-									<img class="content-image img-fluid d-block mx-auto" src="img/blog/cat-widget1.jpg"
-										alt="">
-								</div>
-								<div class="content-details">
-									<h4 class="content-title mx-auto text-uppercase">Social life</h4>
-									<span></span>
-									<p>Enjoy your social life together</p>
-								</div>
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4">
-					<div class="single-cat-widget">
-						<div class="content relative">
-							<div class="overlay overlay-bg"></div>
-							<a href="#" target="_blank">
-								<div class="thumb">
-									<img class="content-image img-fluid d-block mx-auto" src="img/blog/cat-widget2.jpg"
-										alt="">
-								</div>
-								<div class="content-details">
-									<h4 class="content-title mx-auto text-uppercase">Politics</h4>
-									<span></span>
-									<p>Be a part of politics</p>
-								</div>
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4">
-					<div class="single-cat-widget">
-						<div class="content relative">
-							<div class="overlay overlay-bg"></div>
-							<a href="#" target="_blank">
-								<div class="thumb">
-									<img class="content-image img-fluid d-block mx-auto" src="img/blog/cat-widget3.jpg"
-										alt="">
-								</div>
-								<div class="content-details">
-									<h4 class="content-title mx-auto text-uppercase">Food</h4>
-									<span></span>
-									<p>Let the food be finished</p>
-								</div>
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- End top-category-widget Area -->
 
 	<!-- Start post-content Area -->
 	<section class="post-content-area">
@@ -549,54 +476,39 @@
 	<!-- ================ start footer Area ================= -->
 	<footer class="footer-area section-gap">
 		<div class="container">
-			<div class="row">
+			<div class="row justify-content-between">
+				<iframe
+					src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d352.64994074294543!2d-78.54333163111576!3d-0.25556082578735784!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sec!4v1737945949777!5m2!1ses-419!2sec"
+					width="420" height="420"
+					style="border:0; object-fit: contain; border-radius: 8px; margin-right: 5px;" allowfullscreen=""
+					loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 				<div class="col-lg-2 col-md-6 single-footer-widget">
-					<h4>Top Products</h4>
+					<h4 data-es='Links Directos' data-en='Direct Links'>Links Directos</h4>
 					<ul>
-						<li><a href="#">Managed Website</a></li>
-						<li><a href="#">Manage Reputation</a></li>
-						<li><a href="#">Power Tools</a></li>
-						<li><a href="#">Marketing Service</a></li>
+						<li><a href="#" data-es='Inicio' data-en='Home'>Inicio</a></li>
+						<li><a href="#" data-es='Nosotros' data-en='About'>Nosotros</a></li>
+						<li><a href="#" data-es='Programas' data-en='Programs'>Programas</a></li>
+						<li><a href="#" data-es='Shigra Digital' data-en='Digital Shigra'>Shigra Digital</a></li>
+						<li><a href="#" data-es='Medios & Comunicados' data-en='Media & Communications'>Medios &
+								Comunicados</a></li>
+						<li><a href="#" data-es='Contacto' data-en='Contact'>Contacto</a></li>
 					</ul>
 				</div>
-				<div class="col-lg-2 col-md-6 single-footer-widget">
-					<h4>Quick Links</h4>
-					<ul>
-						<li><a href="#">Jobs</a></li>
-						<li><a href="#">Brand Assets</a></li>
-						<li><a href="#">Investor Relations</a></li>
-						<li><a href="#">Terms of Service</a></li>
-					</ul>
-				</div>
-				<div class="col-lg-2 col-md-6 single-footer-widget">
-					<h4>Features</h4>
-					<ul>
-						<li><a href="#">Jobs</a></li>
-						<li><a href="#">Brand Assets</a></li>
-						<li><a href="#">Investor Relations</a></li>
-						<li><a href="#">Terms of Service</a></li>
-					</ul>
-				</div>
-				<div class="col-lg-2 col-md-6 single-footer-widget">
-					<h4>Resources</h4>
-					<ul>
-						<li><a href="#">Guides</a></li>
-						<li><a href="#">Research</a></li>
-						<li><a href="#">Experts</a></li>
-						<li><a href="#">Agencies</a></li>
-					</ul>
-				</div>
-				<div class="col-lg-4 col-md-6 single-footer-widget">
-					<h4>Newsletter</h4>
-					<p>You can trust us. we only send promo offers,</p>
+				<div class="col-lg-4 col-md-8 single-footer-widget">
+					<h4 data-es='Notificaciones' data-en='Notifications'>Notificaciones</h4>
+					<p style="color: #fff"
+						data-es='Enviaremos un mensaje a tu correo cada vez que subamos un nuevo programa.'
+						data-en='We will send you an email every time we add a new program.'>
+						Enviaremos un mensaje a tu correo cada vez que subamos un nuevo programa.</p>
 					<div class="form-wrap" id="mc_embed_signup">
 						<form target="_blank"
 							action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
 							method="get" class="form-inline">
-							<input class="form-control" name="EMAIL" placeholder="Your Email Address"
-								onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Email Address '"
+							<input class="form-control" name="EMAIL" placeholder="Correo Electrónico"
+								onfocus="this.placeholder = ''" onblur="this.placeholder = 'Correo Electrónico '"
 								required="" type="email">
-							<button class="click-btn btn btn-default text-uppercase">subscribe</button>
+							<button class="click-btn btn btn-default text-uppercase" data-es='Enviar'
+								data-en='Send'>Enviar</button>
 							<div style="position: absolute; left: -5000px;">
 								<input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">
 							</div>
@@ -644,6 +556,8 @@
 	<script src="js/jquery.nice-select.min.js"></script>
 	<script src="js/main.js"></script>
 	<script src="js/navcolor.js"></script>
+	<script src="js/modoDark.js"></script>
+	<script src="js/cambiarIdioma.js"></script>
 </body>
 
 </html>
