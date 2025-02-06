@@ -12,9 +12,14 @@ const toggleDarkMode = () => {
         el.classList.toggle("dark-mode");
     });
 
+    // Alternar la clase en los títulos de ambas secciones de servicios
+    document.querySelectorAll("#services .service-card h4, #services-kichwa .service-card h4").forEach(el => {
+        el.classList.toggle("dark-mode");
+    });
+
     // Invertir el color de los logos de los testimoniales y servicios
     toggleTestimonialLogos();
-    toggleServiceIcons(); // Already applied to the service card icons
+    toggleServiceIcons(); // Ya aplicado a los iconos de las tarjetas de servicio
     toggleServiceKichwaIcons();
     toggleServiceKichwaBackground();
 
@@ -35,7 +40,7 @@ const toggleTestimonialLogos = () => {
 
 // Función para invertir el color de los iconos en la sección de servicios
 const toggleServiceIcons = () => {
-    document.querySelectorAll(".service-card .icon-box i").forEach(icon => {
+    document.querySelectorAll("#services .service-card .icon-box i").forEach(icon => {
         icon.classList.toggle("invert-color");
     });
 };
@@ -65,6 +70,11 @@ window.addEventListener('load', () => {
 
         // Aplicar modo oscuro a .about-right h1
         document.querySelectorAll(".about-right h1").forEach(el => {
+            el.classList.add("dark-mode");
+        });
+
+        // Aplicar modo oscuro a los títulos de ambas secciones de servicios
+        document.querySelectorAll("#services .service-card h4, #services-kichwa .service-card h4").forEach(el => {
             el.classList.add("dark-mode");
         });
 
