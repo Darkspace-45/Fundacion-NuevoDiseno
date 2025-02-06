@@ -2,7 +2,6 @@
 const navbar = document.querySelector('.navbar');
 const logo = document.querySelector('.navbar-brand img');
 const links = document.querySelectorAll('.navbar-nav li a');
-const searchIcon = document.querySelector('.search');
 
 // Verifica si estás en el index.html
 const isIndex = window.location.pathname === '/' || window.location.pathname.includes('index.html');
