@@ -1169,16 +1169,94 @@ th {
   background: url(../img/ciberseguridad.jpg) no-repeat center;
   background-position: center right;
   background-size: cover;
-  height: 750px;
+  content: "";
+  margin-top: 92px;
+  height: 565px;
+}
+
+.banner-area::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2); /* Fondo negro con 50% de transparencia */
+}
+
+.banner-area * {
+  position: relative;
+  z-index: 1;
+}
+
+.banner-area2 {
+  background: url(../img/pexels-pixabay-326576.jpg) no-repeat center;
+  background-position: center right;
+  background-size: cover;
+  margin-top: 92px;
+  height: 565px;
+}
+
+.banner-area2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2); /* Fondo negro con 50% de transparencia */
+}
+
+.banner-area2 * {
+  position: relative;
+  z-index: 1;
+}
+
+.banner-area3 {
+  background: url(../img/pexels-digitalbuggu-167538.jpg) no-repeat center;
+  background-position: center right;
+  background-size: cover;
+  margin-top: 92px;
+  height: 565px;
+}
+
+.banner-area3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.banner-area3 * {
+  position: relative;
+  z-index: 1;
 }
 
 .banner-area-shi {
   background: url(../img/Andino.jpg) no-repeat center;
   background-position: center right;
   background-size: cover;
-  height: 840px;
+  margin-top: 92px;
+  height: 700px;
 }
 
+.banner-area-shi::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2); /* Fondo negro con 50% de transparencia */
+}
+
+.banner-area-shi * {
+  position: relative;
+  z-index: 1;
+}
 
 .banner-right {
   margin-top: 200px;
@@ -2589,6 +2667,10 @@ th {
   .top-category-widget-area .single-cat-widget {
     margin-bottom: 50px;
   }
+}
+
+.post-content-area{
+  margin-top: 50px;
 }
 
 .post-content-area .single-post {
