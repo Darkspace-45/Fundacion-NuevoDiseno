@@ -1183,7 +1183,14 @@ th {
   background: url(../img/Andino.jpg) no-repeat center;
   background-position: center right;
   background-size: cover;
-  height: 840px;
+  height: 750px;
+}
+
+.banner-area-blog {
+  background: url(../img/ciberespacio.jpg) no-repeat center;
+  background-position: center right;
+  background-size: cover;
+  height: 750px;
 }
 
 
@@ -1634,6 +1641,7 @@ th {
   height: 250px;
   object-fit: cover;
   transition: transform 0.3s ease;
+  padding-top: 20px;
 }
 
 .feature-card:hover .feature-img {
@@ -2495,7 +2503,7 @@ th {
 .blog-home-banner {
   background: url(../img/blog/blog-home-banner.jpg) bottom;
   background-size: cover;
-  padding: 130px 0px;
+  padding: 750px 0px;
 }
 
 .blog-home-banner h1 span {
@@ -2591,17 +2599,18 @@ th {
 
 @media (max-width: 991px) {
   .top-category-widget-area .single-cat-widget {
-    margin-bottom: 50px;
+    margin-bottom: 0px;
   }
 }
 
 .post-content-area .single-post {
-  margin-bottom: 50px;
+  margin-bottom: 0px;
 }
+
 
 .post-content-area .single-post .meta-details {
   text-align: right;
-  margin-top: 35px;
+  margin-top: 30px;
 }
 
 @media (max-width: 767px) {
@@ -2633,7 +2642,7 @@ th {
 
 @media (max-width: 1024px) {
   .post-content-area .single-post .meta-details {
-    margin-top: 0px;
+    margin-top: 30px;
   }
 }
 
@@ -2669,7 +2678,7 @@ th {
 }
 
 .post-content-area .single-post .posts-title h3 {
-  margin: 20px 0px;
+  margin-top: 50px;
 }
 
 .post-content-area .single-post .excert {
