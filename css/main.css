@@ -1188,7 +1188,8 @@ th {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.2); /* Fondo negro con 50% de transparencia */
+  background: rgba(0, 0, 0, 0.2);
+  /* Fondo negro con 50% de transparencia */
 }
 
 .banner-area * {
@@ -1211,7 +1212,8 @@ th {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.2); /* Fondo negro con 50% de transparencia */
+  background: rgba(0, 0, 0, 0.2);
+  /* Fondo negro con 50% de transparencia */
 }
 
 .banner-area2 * {
@@ -1246,10 +1248,8 @@ th {
   background: url(../img/Andino.jpg) no-repeat center;
   background-position: center right;
   background-size: cover;
-<<<<<<< HEAD
   margin-top: 92px;
   height: 700px;
-=======
   height: 750px;
 }
 
@@ -1258,7 +1258,6 @@ th {
   background-position: center right;
   background-size: cover;
   height: 750px;
->>>>>>> abefc9c1cdbd9e0bc2840b0e669b99e75ca1cc99
 }
 
 .banner-area-shi::before {
@@ -1268,7 +1267,8 @@ th {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.2); /* Fondo negro con 50% de transparencia */
+  background: rgba(0, 0, 0, 0.2);
+  /* Fondo negro con 50% de transparencia */
 }
 
 .banner-area-shi * {
@@ -2685,7 +2685,7 @@ th {
   }
 }
 
-.post-content-area{
+.post-content-area {
   margin-top: 50px;
 }
 
@@ -5004,11 +5004,8 @@ h6 {
   transform: translateY(-2px);
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
-<<<<<<< HEAD
-=======
 
 .invert-color {
   filter: invert(1);
   mix-blend-mode: difference;
 }
->>>>>>> abefc9c1cdbd9e0bc2840b0e669b99e75ca1cc99
