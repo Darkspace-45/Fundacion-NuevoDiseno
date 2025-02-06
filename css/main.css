@@ -1832,7 +1832,6 @@ th {
   }
 }
 
-/* Mantener todos los estilos anteriores */
 .feature-card {
   position: relative;
   background: #fff;
@@ -1844,16 +1843,12 @@ th {
   cursor: pointer;
 }
 
-/* Mantener todos los estilos originales de .feature-card y demás clases ... */
-
-/* Estilos para la última tarjeta con animación */
 .last-card {
   display: none;
   margin: 0 auto;
   max-width: 400px;
   opacity: 0;
   transform: translateY(40px);
-  /* Cambiado a 40px hacia abajo */
   transition: opacity 0.5s ease, transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -1866,14 +1861,12 @@ th {
 .last-card.hiding {
   opacity: 0;
   transform: translateY(40px);
-  /* Mantener el desplazamiento hacia abajo */
 }
 
 @keyframes slideDown {
   0% {
     opacity: 0;
     transform: translateY(40px);
-    /* Comienza desde abajo */
   }
 
   100% {
@@ -1882,7 +1875,6 @@ th {
   }
 }
 
-/* Estilos del botón */
 .show-more-wrapper {
   width: 100%;
   display: flex;
@@ -1924,7 +1916,6 @@ th {
   transform: rotate(-135deg);
 }
 
-/* Nueva animación para el botón */
 @keyframes slideUp {
   0% {
     transform: translateY(0);
