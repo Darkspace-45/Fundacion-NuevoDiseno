@@ -2514,7 +2514,8 @@ th {
 
 .contact-page-area .form-area input,
 .contact-page-area .form-area textarea {
-  border-radius: 0;
+  border-radius: 20px;
+  border-color: #000;
   font-size: 13px !important;
 }
 
